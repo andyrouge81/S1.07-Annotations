@@ -32,5 +32,5 @@ public abstract class Worker {
     }
 
 
-    public abstract double salaryCalculate(double monthHours);
+    public abstract double calculateSalary(double monthHours);
 }
