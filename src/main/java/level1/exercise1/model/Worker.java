@@ -1,6 +1,6 @@
-package level1.exercise1L1.model;
+package level1.exercise1.model;
 
-public abstract class Worker {
+public class Worker {
 
     private String name;
     private String surname;
@@ -32,5 +32,8 @@ public abstract class Worker {
     }
 
 
-    public abstract double calculateSalary(double monthHours);
+    public double calculateSalary(double monthHours){
+		return this.pricePerHour * monthHours;
+	}
+
 }

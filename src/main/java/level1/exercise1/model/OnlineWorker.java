@@ -1,4 +1,4 @@
-package level1.exercise1L1.model;
+package level1.exercise1.model;
 
 public class OnlineWorker extends Worker{
 
@@ -11,6 +11,11 @@ public class OnlineWorker extends Worker{
 
     @Override
     public double calculateSalary(double monthHours){
-        return (getPricePerHour() * monthHours) +this.INTERNET_FEE;
+		if(monthHours<0){
+			throw new IllegalArgumentException("Error adding month hours.");
+		}
+
+
+		return (getPricePerHour() * monthHours) +this.INTERNET_FEE;
     }
 }

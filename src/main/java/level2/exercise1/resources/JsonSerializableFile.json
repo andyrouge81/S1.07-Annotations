@@ -1,0 +1,13 @@
+[ {
+  "name" : "Toby",
+  "talk" : "Guau!",
+  "age" : 6
+}, {
+  "name" : "Rambo",
+  "talk" : "Goof!",
+  "age" : 2
+}, {
+  "name" : "Socrates",
+  "talk" : "Arff!",
+  "age" : 9
+} ]

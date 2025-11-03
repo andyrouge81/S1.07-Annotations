@@ -1,4 +1,4 @@
-package level1.exercise1L1.model;
+package level1.exercise1.model;
 
 public class InPersonWorker extends Worker{
 
@@ -10,6 +10,10 @@ public class InPersonWorker extends Worker{
 
     @Override
     public double calculateSalary(double monthHours){
-        return (getPricePerHour() * monthHours) + this.fuelCost;
+		if(monthHours < 0){
+			throw new IllegalArgumentException("The hours could not be less than zero.");
+		}
+
+		return (getPricePerHour() * monthHours) + this.fuelCost;
     }
 }

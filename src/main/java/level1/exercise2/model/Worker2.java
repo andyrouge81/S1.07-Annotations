@@ -1,4 +1,4 @@
-package level1.exercise2L1.model;
+package level1.exercise2.model;
 
 public abstract class Worker2 {
 
@@ -19,9 +19,6 @@ public abstract class Worker2 {
     public String getSurname(){return this.surname;}
     public double getPricePerHour(){return this.pricePerHour;}
 
-    public void setPricePerHour(double pricePerHour){
-        this.pricePerHour = pricePerHour;
-    }
 
 
 
